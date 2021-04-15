@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <script type="text/javascript" src="js/myScript.js"></script>
+</head>
+<body>
+    <div style="width: 90%;  margin: 0 auto;">
+        <!--preload images-->
+        <div style="display: none;">
+            <img src="img/quiz.gif">
+        </div>
+        <!--header div-->
+        <div style="text-align: center;">
+            <h1>The JavaScript Quiz</h1>
+            <img src="img/quiz.gif" id="headImg" height=200px width=200px>
+            <h2 id="msg">Test your JavaScript Knowledge</h2>
+            <button id="startBtn" class="btn" onclick="start()">Start</button>
+        <!--start question 1 div-->
+        <div class="question" id="question0">
+            <h3>Q1. Javascript is a _______ language?</h3>
+            <form>
+                <table cellpadding="10"  align="center">
+                    <tr align="left">
+                        <td><input type="radio" name="q1" value="Programming" id="Programming">Programming</td>
+                        <td><input type="radio" name="q1" value="Scripting" id="Scripting">Scripting</td>
+                    </tr>
+                    <tr align="left">
+                        <td><input type="radio" name="q1" value="Application" id="Application">Application</td>
+                        <td><input type="radio" name="q1" value="None1" id="None1">None</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansBlock0">Correct!!!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" value="Submit" class="btn" id=0 onclick="check(this.id)"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!--start question 2 div-->
+        <div class="question" id="question1">
+            <h3>Q2. Javascript is a _______ side scripting language.</h3>
+            <form>
+                <table cellpadding="10"  align="center">
+                    <tr align="left">
+                        <td><input type="radio" name="q2" value="Server" id="Server">Server</td>
+                        <td><input type="radio" name="q2" value="ISP" id="ISP">ISP</td>
+                    </tr>
+                    <tr align="left">
+                        <td><input type="radio" name="q2" value="Client" id="Client">Client</td>
+                        <td><input type="radio" name="q2" value="None2" id="None2">None</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansBlock1">Correct!!!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" value="Submit" class="btn" id=1 onclick="check(this.id)"/></td>
+                    </tr>
+                </table>
+            </form>        
+        </div>
+        <!--start question 3 div-->
+        <div class="question" id="question2">
+            <h3>Q3. Javascript is written inside file having extension what?</h3>
+            <form>
+                <table cellpadding="10"  align="center">
+                    <tr align="left">
+                        <td><input type="radio" name="q3" value="js" id="js">.js</td>
+                        <td><input type="radio" name="q3" value="jvs" id="jvs">.jvs</td>
+                    </tr>
+                    <tr align="left">
+                        <td><input type="radio" name="q3" value="javascript" id="javascript">.javascript</td>
+                        <td><input type="radio" name="q3" value="jsc" id="jsc">.jsc</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ansDiv" id="ansBlock2">Correct!!!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" value="Submit" class="btn" id=2 onclick="check(this.id)"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
